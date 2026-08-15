@@ -6,9 +6,11 @@
     font-family: "Poppins", sans-serif;
 }
 nav{
+    position: fixed;
     background:#1b1b1b;
     width:100%;
     padding:10px 0;
+    z-index:12;
 }
 nav .menu{
     max-width: 1250px;
@@ -45,10 +47,19 @@ nav .menu{
     background:#fff;
     color:#000;
 }
+
 .img{
     background: url(layout.jpg) no-repeat;
     height: 100vh;
     width: 100%;
     background-position:center ;
-    background:cover;
+    background-size:cover;
+    position: relative;
+}
+.img::before{
+content:'';
+position: absolute;
+height:100%;
+width:100%;
+background rgba(0,0,0,0.5)
 }
