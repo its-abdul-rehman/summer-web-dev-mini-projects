@@ -7,12 +7,11 @@
 }
 body{
     min-height: 100vh;
-    width:100%;
     display:flex;
     align-items: center;
     justify-content: center;
     background:#f2f2f2;
-
+    position: relative;
 }
 .cards .card .content{
     display:flex;
@@ -49,7 +48,7 @@ body{
     display: flex;
     margin-top: 10px;
 }
-.card .content .media-icons .links{
+.media-icons .links{
     height:35px;
     width:35px;
     font-size: 22px;
@@ -62,7 +61,7 @@ body{
     background: var(--bg-color);
     transition: all 0.5s ease;
 }
-.content .media-icons .links:hover{
+.media-icons .links:hover{
     background: #fff;
     border-color: #4070f4;
     color: #4070f4;
@@ -71,14 +70,23 @@ body{
     max-width: 950px;
     background: red;
     width:100%;
+    overflow:hidden;
+    padding:80px 0;
+}
+.container .main-card{
+    width:200%;
+    background: grey;
 }
 .main-card .cards{
+    width:calc(100%/2-10px);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px;
 }
 .main-card .cards .card{
     background: #fff;
     width:calc(100%/3-10px);
     padding:30px;
-    border-radius: 24px;
+    border-radius: 12px;
 }
