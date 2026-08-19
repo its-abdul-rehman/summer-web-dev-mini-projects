@@ -100,4 +100,16 @@ body{
     height:15px;
     width:15px;
     background: #fff;
+    margin:0 4px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.button label.active{
+    width:35px;
+}
+#one:checked ~ .button label.one{
+    width:35px;
+}
+#two:checked ~ .button label.two{
+    width:35px;
 }
