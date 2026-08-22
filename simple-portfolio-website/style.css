@@ -9,6 +9,9 @@ html,body{
     margin:0;
     padding:0;
 }
+.nav-bar{
+    list-style: none;
+}
 section{
     padding:0 16px 0 16px;
 }
@@ -37,6 +40,9 @@ section{
 }
 .hero-info{
     text-align: center;
+}
+.hero-info span{
+    color: rgb(124, 37, 206);
 }
 .skills{
     list-style: none;
